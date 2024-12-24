@@ -83,12 +83,6 @@ background: black;
 }
 
 
-
-
-
-
-
-
 /* Hide menu for smaller screens */
 .menu-toggle {
 
@@ -98,8 +92,6 @@ background: black;
     border: none;
     font-size: 28px;
     cursor: pointer;
-
-    
 }
 
 

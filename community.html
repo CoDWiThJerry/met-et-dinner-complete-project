@@ -154,6 +154,8 @@
 
 
 <script>
+
+
 const slider = document.querySelector('.slider');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -168,7 +170,8 @@ prevBtn.addEventListener('click', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-    if (currentIndex < slider.children.length - 3) {
+    const maxIndex = Math.ceil(slider.children.length - getVisibleCards());
+    if (currentIndex < maxIndex) {
         currentIndex++;
         updateSliderPosition();
     }
@@ -176,9 +179,22 @@ nextBtn.addEventListener('click', () => {
 
 function updateSliderPosition() {
     const cardWidth = slider.children[0].offsetWidth + 20; // Card width + margin
-    const offset = (slider.parentElement.offsetWidth - 3 * cardWidth) / 2; // Center alignment offset
-    slider.style.transform = `translateX(${offset - currentIndex * cardWidth}px)`;
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
 }
+
+function getVisibleCards() {
+    const containerWidth = document.querySelector('.slider-wrapper').offsetWidth;
+    const cardWidth = slider.children[0].offsetWidth + 20; // Card width + margin
+    return Math.floor(containerWidth / cardWidth);
+}
+
+
+// menu toggle
+  document.getElementById("menuToggle").addEventListener("click", function () {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+});
+
 </script>
 
 </body>

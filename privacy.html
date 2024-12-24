@@ -122,19 +122,13 @@
 </footer>
 
 
-
-  <script>
-    document.getElementById("toggleCookies").addEventListener("click", function() {
-  const details = document.getElementById("cookieDetails");
-  if (details.style.display === "none") {
-    details.style.display = "block";
-    this.textContent = "Show Less";
-  } else {
-    details.style.display = "none";
-    this.textContent = "Learn More";
-  }
+<script>
+    document.getElementById("menuToggle").addEventListener("click", function () {
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
 });
 
-  </script>
+</script>
+
 </body>
 </html>
