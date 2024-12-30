@@ -2396,23 +2396,25 @@ line-height: 15px;
 }
 .start {
     width:100%;
-   height: 300px;margin-top: -30%;
+   height: 300px;
+   margin-top: -30%;
 } 
 
 .start-btn:hover{
 
-    height: 250px;
+    height: 200px;
 }
 
 .end-btn:hover{
 
-    height: 250px;
+    height: 200px;
 }
 
 .mid {
     width:100%;
     height: 200px;
-    margin-top:25%;
+   margin-top: 40%;
+   margin-bottom: 20%;
 }
 .end {
     width:100%;
@@ -2424,14 +2426,16 @@ line-height: 15px;
 .start-btn:hover h3{
 
     margin-top: 0%;
+    font-size: 24px;
  }
  .start-btn h3{
 
 font-size: 24px;
 
 }
-.start-btn p{
-    font-size: 14px;
+.start-btn:hover p{
+    font-size: 18px;
+    line-height: 30px;
 
 }
 .start-btn:hover .mara{
@@ -2439,9 +2443,10 @@ margin-top: 0%;
 }
 
 
-.end-btn p{
+.end-btn:hover p{
  
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .end-btn h3{
@@ -2451,7 +2456,7 @@ font-size: 24px;
 }
 
 .end-btn:hover h3{
-
+    font-size: 24px;
    margin-top: 0%;   
 }
 
@@ -2731,7 +2736,15 @@ padding-left: 23.5%;
 
 }
 
+@media(max-width:430px) {
+    .swiper-button-next,.swiper-button-prev {
 
+        
+        margin:50.5% 35%;
+   
+     }
+    
+}
 
 @media (max-width:400px) {
 
