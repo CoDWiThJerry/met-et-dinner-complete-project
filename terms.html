@@ -21,11 +21,19 @@
             </div></a>
             
             <ul class="nav-links" id="navLinks">
-                <li><a class="nav-act" href="service.html">What’s App in App</a></li>
+                <button class="menu-toggle" id="menu-Toggle">X</button>
+                <li><a class="nav-act" href="What’s App in App.html">What’s App in App</a></li>
                 <img src="Line 4.png">
                 <li><a class="nav-act" href="about.html" >About Us</a></li>
                 <img src="Line 4.png">
                 <li><a class="nav-act" href="contact.html">Contact Us</a></li>
+                <div id="inside">
+                    <div id="inside-logo">
+                    <img src="fi_20837.png">
+                    <img src="fi_1384031.png">
+                    <img src="fi_739206.png">
+                </div>
+              </div>
             </ul>
             <button class="menu-toggle" id="menuToggle" style="margin-left: 10%;">☰</button>
             <div id="side-logo">
@@ -73,55 +81,64 @@
   <p>If you have any questions about these terms, please <a href="mailto:metatdinner@gmail.com">metatdinner@gmail.com</a></p>
 </main>
 
+
 <footer>
     <div class="up">
-        <div class="min-up">
+      <div class="min-up">
+
+
         <div class="log">
             <img src="logo.svg">
         </div>
-        <div class="pol">
-        <div class="cen">
-            <h3>Legal</h3>
-            <p><a href="privacy.html">Privacy Policy</a></p>
-            <p><a href="terms.html">Terms of Use</a></p>
-            <p><a href="community.html">Community Page</a></p>
-        </div>
-        </div>
-        <div class="soc">
-            
+
+        <div id="fl-ex">
+          <div class="pol">
             <div class="cen">
-                <h3>Social</h3>
-                <div class="soc-img">
-                    <img src="fi_1384031.png">
-                    <img src="fi_20837.png">
-                    <img src="fi_739206.png">
-                </div> 
-              
+                <h3>Legal</h3>
+                <p><a href="privacy.html">Privacy Policy</a></p>
+                <p><a href="terms.html">Terms of Use</a></p>
+                <p><a href="community.html">Community Page</a></p>
             </div>
-        </div>
-        <div class="dow">
-            <div class="cen">
-                <h3>Download App</h3>
-                <div class="soc-img1">
-                    <img src="Group.png">
-                    <img src="apple-svgrepo-com 2.png">
-                    
-                </div> 
             </div>
-        </div>
-    </div>
+            <div class="soc">
+                
+                <div class="cen">
+                    <h3>Social</h3>
+                    <div class="soc-img">
+                        <img src="fi_1384031.png">
+                        <img src="fi_20837.png">
+                        <img src="fi_739206.png">
+                    </div> 
+                  
+                </div>
+            </div>
+          </div>
+            <div class="dow">
+              <div class="cen">
+                  <h3>Download App</h3>
+                  <div class="soc-img1">
+                      <img src="Group.png">
+                      <img src="apple-svgrepo-com 2.png">
+                      
+                  </div> 
+              </div>
+          </div>
+        
+
 
     </div>
+    </div>
+
+
     <div class="down">
-    <span>Copyright@ 2024 MetAtDinner.com</span>
-    </div>
-</footer>
+      <span>Copyright@ 2024 MetAtDinner.com</span>
+      </div>
 
-<script>
-    document.getElementById("menuToggle").addEventListener("click", function () {
-    const navLinks = document.getElementById("navLinks");
-    navLinks.classList.toggle("active");
-});
+  </footer>
+
+  
+<script src="script.js">
+
 
 </script>
 

@@ -1,20 +1,15 @@
-document.getElementById('menuToggle').addEventListener('click', () => {
-    document.getElementById('navLinks').classList.toggle('active');
+const menuToggle = document.getElementById('menuToggle');
+const closeButton = document.getElementById('menu-Toggle'); // Close button inside nav-links
+const navLinks = document.getElementById('navLinks');
+
+// Show nav-links when menu button is clicked
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.add('active'); // Add the "active" class to display nav-links
 });
 
-
-                        
-const navLinks = document.querySelectorAll('.nav-act');
-
-// Add a click event listener to each nav link
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    // Remove 'active' class from all nav links
-    navLinks.forEach(nav => nav.classList.remove('active'));
-    
-    // Add 'active' class to the clicked link
-    link.classList.add('active');
-  });
+// Hide nav-links when close button is clicked
+closeButton.addEventListener('click', () => {
+    navLinks.classList.remove('active'); // Remove the "active" class to hide nav-links
 });
 
 
@@ -263,9 +258,6 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
     popup.classList.add("hidden");
   }
 });
-
-
-
 
 
 

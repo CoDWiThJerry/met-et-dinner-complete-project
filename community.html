@@ -22,11 +22,19 @@
             </div></a>
             
             <ul class="nav-links" id="navLinks">
-                <li><a class="nav-act" href="service.html">What’s App in App</a></li>
+              <button class="menu-toggle" id="menu-Toggle">X</button>
+                <li><a class="nav-act" href="What’s App in App.html">What’s App in App</a></li>
                 <img src="Line 4.png">
                 <li><a class="nav-act" href="about.html" >About Us</a></li>
                 <img src="Line 4.png">
                 <li><a class="nav-act" href="contact.html">Contact Us</a></li>
+                <div id="inside">
+                  <div id="inside-logo">
+                  <img src="fi_20837.png">
+                  <img src="fi_1384031.png">
+                  <img src="fi_739206.png">
+              </div>
+            </div>
             </ul>
             <button class="menu-toggle" id="menuToggle" style="margin-left: 10%;">☰</button>
             <div id="side-logo">
@@ -108,33 +116,39 @@
 </main>
 
 
+
 <footer>
-    <div class="up">
-        <div class="min-up">
-        <div class="log">
-            <img src="logo.svg">
-        </div>
+  <div class="up">
+    <div class="min-up">
+
+
+      <div class="log">
+          <img src="logo.svg">
+      </div>
+
+      <div id="fl-ex">
         <div class="pol">
-        <div class="cen">
-            <h3>Legal</h3>
-            <p><a href="privacy.html">Privacy Policy</a></p>
-            <p><a href="terms.html">Terms of Use</a></p>
-            <p><a href="community.html">Community Page</a></p>
-        </div>
-        </div>
-        <div class="soc">
-            
-            <div class="cen">
-                <h3>Social</h3>
-                <div class="soc-img">
-                    <img src="fi_1384031.png">
-                    <img src="fi_20837.png">
-                    <img src="fi_739206.png">
-                </div> 
+          <div class="cen">
+              <h3>Legal</h3>
+              <p><a href="privacy.html">Privacy Policy</a></p>
+              <p><a href="terms.html">Terms of Use</a></p>
+              <p><a href="community.html">Community Page</a></p>
+          </div>
+          </div>
+          <div class="soc">
               
-            </div>
+              <div class="cen">
+                  <h3>Social</h3>
+                  <div class="soc-img">
+                      <img src="fi_1384031.png">
+                      <img src="fi_20837.png">
+                      <img src="fi_739206.png">
+                  </div> 
+                
+              </div>
+          </div>
         </div>
-        <div class="dow">
+          <div class="dow">
             <div class="cen">
                 <h3>Download App</h3>
                 <div class="soc-img1">
@@ -144,16 +158,22 @@
                 </div> 
             </div>
         </div>
-    </div>
+      
 
-    </div>
-    <div class="down">
+
+  </div>
+  </div>
+
+
+  <div class="down">
     <span>Copyright@ 2024 MetAtDinner.com</span>
     </div>
+
 </footer>
 
-
 <script>
+
+//community page .....
 
 
 const slider = document.querySelector('.slider');
@@ -194,6 +214,27 @@ function getVisibleCards() {
   const navLinks = document.getElementById("navLinks");
   navLinks.classList.toggle("active");
 });
+
+
+
+//navbar..
+
+
+
+const menuToggle = document.getElementById('menuToggle');
+const closeButton = document.getElementById('menu-Toggle'); // Close button inside nav-links
+const navLinks = document.getElementById('navLinks');
+
+// Show nav-links when menu button is clicked
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.add('active'); // Add the "active" class to display nav-links
+});
+
+// Hide nav-links when close button is clicked
+closeButton.addEventListener('click', () => {
+    navLinks.classList.remove('active'); // Remove the "active" class to hide nav-links
+});
+
 
 </script>
 
