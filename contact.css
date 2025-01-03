@@ -2,6 +2,7 @@ body {
     list-style: none;
     text-decoration: none; 
     background: black;
+    overflow-x: hidden;
 }
 
 *{
@@ -17,7 +18,7 @@ body {
     align-items: center;
     
     color: white;
- 
+    
     padding: 1.5% 8%;
 
 }
@@ -281,7 +282,7 @@ line-height: 26px; /* 118.182% */
     height: 250px;
     margin-top: 7%;
   padding: 0% 3%;
-
+ 
 
 }
 .up{
@@ -424,7 +425,9 @@ text-align: center;
 
 @media(max-width:1300px){
    
-  
+  #one{
+    overflow: hidden;
+  }
     .menu-toggle {
         width: 100px;
         display: block;
@@ -539,7 +542,7 @@ text-align: center;
         width: 100%;
         height:700px;
         margin-top: 20%;
-      overflow: hidden;
+    
     }
     .up{
         width: 100%;
