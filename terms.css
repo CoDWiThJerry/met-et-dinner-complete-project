@@ -753,6 +753,11 @@ text-align: center;
            .group-strait img{
             width:100px;
            }
+           p a {
+            pointer-events: auto;
+            cursor: pointer;
+          }
+          
            footer{
             width: 100%;
             height:700px;
