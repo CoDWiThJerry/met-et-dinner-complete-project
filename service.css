@@ -1649,7 +1649,8 @@ text-align: center;
     .dow{
     width: 100%;
     height:auto;
-  
+    position: sticky;
+    z-index: -5;
       
     }
     .soc-img1{

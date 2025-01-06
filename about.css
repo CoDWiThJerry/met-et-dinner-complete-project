@@ -539,7 +539,8 @@ line-height: 18px;
 
     width: 30%;
     height: 170px;
-
+    position: sticky;
+    z-index: -5;
   
 }
 
