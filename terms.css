@@ -179,7 +179,7 @@ body {
 
   }
   main p a{
-    position: absolute;
+    position: sticky;
     z-index: 5;
   }
 

@@ -194,12 +194,13 @@ body {
   }
   
 
-  #contact p a{
+  main p a{
      color:maroon; 
-   position: absolute;
-   z-index: 5;
-     
+     position: sticky;
+z-index: 5;
   }
+
+
 
 
   /* footer */
