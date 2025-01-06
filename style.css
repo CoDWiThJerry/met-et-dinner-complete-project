@@ -3120,6 +3120,26 @@ justify-content:end;
         gap:410px;
          }
 
+         footer{
+            width: 100%;
+            height:700px;
+        margin-top: -20%;
+          
+        }
+        .up{
+            width: 100%;
+            height: 650px;
+        
+        }
+        .min-up{
+            width: 100%;
+            height: 700px;
+         flex-direction: column;
+         justify-content: center;
+         padding-top: 40%;
+        
+        }
+
      
         .dow{
         width: 100%;
@@ -3192,6 +3212,7 @@ justify-content:end;
         
           
         }
+      
    
 }
 
@@ -3265,6 +3286,9 @@ justify-content:end;
     .end-btn:hover h3{
        font-size: 20px;
        margin-top: 5%;   
+    }
+    .cen{
+        margin-top: -10%;
     }
 }
 
@@ -3392,6 +3416,9 @@ justify-content:end;
             margin-top: 40%;
         
         }
+        .cen{
+            margin-top: -12%;
+        }
 }
 @media(max-width:528px){
     .swiper-button-prev {
@@ -3515,7 +3542,22 @@ justify-content:end;
         display: flex;
         gap:410px;
          }
+         .cen{
+            margin-top: -12%;
+        }
    
+}
+@media(max-width:500px){
+    
+
+    .min-up{
+        width: 100%;
+        height: 700px;
+     flex-direction: column;
+     justify-content: center;
+     padding-top: 60% !important;
+    
+    }
 }
 @media(max-width:454px){
     .swiper-button-prev {
@@ -3648,6 +3690,9 @@ justify-content:end;
     .pol{
         padding-top:2%;
     }
+    .cen{
+        margin-top: -15%;
+    }
        
 }   
 @media(max-width:414px){
@@ -3666,6 +3711,9 @@ justify-content:end;
  
             font-size: 14px;
             line-height: 20px !important;
+        }
+        .cen{
+            margin-top: -18%;
         }
      
 } 
@@ -4215,22 +4263,22 @@ flex-direction: column;
 
 footer{
     width: 100%;
-    height:500px;
-
+    height:700px;
+margin-top: -30%;
   
 }
 .up{
     width: 100%;
-    height: 500px;
+    height: 650px;
 
 }
 .min-up{
     width: 100%;
-    height: 400px;
+    height:700px;
  flex-direction: column;
  justify-content: center;
  padding-top: 80%;
-
+padding-top:80%;
 }
 #fl-ex{
     width: 100%;

@@ -193,12 +193,12 @@ body {
     text-decoration: none;
   }
   
-  a:hover {
-    color: #0056b3;
-    text-decoration: none;
-  }
+
   #contact p a{
      color:maroon; 
+   position: absolute;
+   z-index: 5;
+     
   }
 
 
@@ -625,7 +625,25 @@ text-align: center;
 
 
 @media(max-width:700px){
+    footer{
+        width: 100%;
+        height:700px;
+    margin-top: -20%;
+      
+    }
+    .up{
+        width: 100%;
+        height: 650px;
     
+    }
+    .min-up{
+        width: 100%;
+        height: 700px;
+     flex-direction: column;
+     justify-content: center;
+     padding-top: 40%;
+    
+    }
     .dow{
         width: 100%;
     
@@ -666,7 +684,7 @@ text-align: center;
         height: 23px;
     }
     .cen{
-        margin-top: -2%;
+        margin-top: -5%;
     }
 }
 
@@ -679,6 +697,9 @@ text-align: center;
         gap: 20px;
        
     }
+    .cen{
+        margin-top: -8%;
+    }
 }
 
 @media(max-width:550px){
@@ -687,6 +708,64 @@ text-align: center;
         justify-content:start!important;
         gap: 20px;
        
+    }
+}
+@media(max-width:528px){
+    .dow{
+        width: 100%;
+      
+        }
+        .soc-img1{
+            width:100px;
+            display: flex;
+            justify-content:start !important;
+        }
+  
+    .soc-img{
+        display: flex;
+        justify-content:start;
+        gap: 10px;
+      
+    }
+    .soc-img img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .cen h3{
+        text-align:start;
+        font-size: 4vw;
+        }
+        .cen p{
+            font-size: 3vw !important;
+        }
+
+    .soc-img1{
+        display: flex;
+        justify-content:center;
+        gap: 20px;
+        width: 100px;
+    }
+    .soc-img1 img{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media(max-width:500px){
+    footer{
+        width: 100%;
+        height:700px;
+    margin-top: -40%;
+      
+    }
+
+    .min-up{
+        width: 100%;
+        height: 700px;
+     flex-direction: column;
+     justify-content: center;
+     padding-top: 60% !important;
+    
     }
 }
 @media(max-width:480px){
@@ -704,6 +783,11 @@ text-align: center;
     }
 }
 
+@media(max-width:420px){
+    .cen{
+        margin-top:-15%;
+    }
+}
 
 @media (max-width:400px){
     .menu-toggle {
